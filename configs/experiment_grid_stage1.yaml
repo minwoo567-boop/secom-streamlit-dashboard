@@ -1,0 +1,51 @@
+# Stage 0-3: default hyperparameters, broad prep x sample x model grid
+stages:
+  - name: stage0
+    prep_ids: [P0_minimal]
+    sample_ids: [S0_none]
+    model_ids: [B0_dummy]
+    hp_ids: [default]
+  - name: stage1
+    prep_ids: [P0_minimal, P2_drop40_median]
+    sample_ids: [S0_none, S1_weight]
+    model_ids: [B1_logistic_l2, B2_logistic_l1]
+    hp_ids: [default]
+  - name: stage2
+    prep_ids: [P2_drop40_median]
+    sample_ids: [S0_none, S1_weight, S2_smote, S3_adasyn, S4_borderline, S5_under_smote]
+    model_ids: [B1_logistic_l2]
+    hp_ids: [default]
+  - name: stage3
+    prep_ids: [P6_full_mi40, P7_full_mi80, P8_miss_indicator, P4_drop40_winsor]
+    sample_ids: [S1_weight]
+    model_ids: [M1_random_forest, M2_xgboost, M3_lightgbm]
+    hp_ids: [default]
+
+prep_ids_all:
+  - P0_minimal
+  - P1_drop20_median
+  - P2_drop40_median
+  - P4_drop40_winsor
+  - P5_drop40_iqr
+  - P6_full_mi40
+  - P7_full_mi80
+  - P8_miss_indicator
+
+sample_ids_all:
+  - S0_none
+  - S1_weight
+  - S2_smote
+  - S3_adasyn
+  - S4_borderline
+  - S5_under_smote
+
+model_ids_all:
+  - B0_dummy
+  - B1_logistic_l2
+  - B2_logistic_l1
+  - M1_random_forest
+  - M2_xgboost
+  - M3_lightgbm
+
+threshold_strategies:
+  - optimize_f1_val
