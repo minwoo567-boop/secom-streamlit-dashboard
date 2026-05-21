@@ -1,0 +1,19 @@
+# Stage 4: HP tuning on top combos from stage3 (filled by select_best stage3)
+# Default fallback top prep/sample pairs
+stages:
+  - name: stage4
+    prep_ids: [P6_full_mi40, P4_drop40_winsor]
+    sample_ids: [S1_weight, S2_smote]
+    model_ids: [M2_xgboost, M3_lightgbm]
+    hp_ids: [tune_lgbm, tune_xgb]
+
+hp_profiles:
+  tune_xgb:
+    max_depth: [3, 5]
+    learning_rate: [0.05, 0.1]
+    n_estimators: [300]
+  tune_lgbm:
+    num_leaves: [15, 31]
+    learning_rate: [0.05, 0.1]
+    n_estimators: [300]
+    min_child_samples: [10]
