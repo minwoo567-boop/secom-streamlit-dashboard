@@ -1,0 +1,8 @@
+# Local training / experiments (not required on Streamlit Cloud)
+-r requirements.txt
+matplotlib>=3.7
+seaborn>=0.12
+statsmodels>=0.14
+tabulate>=0.9
+pyarrow>=14.0
+kaggle>=1.6
