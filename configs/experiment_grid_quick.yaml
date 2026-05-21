@@ -1,0 +1,13 @@
+stage_name: quick
+# 핵심 비교 10회: 베이스라인 → 전처리 → 샘플링 → XGB/LGBM/RF
+experiments:
+  - {prep_id: P0_minimal, sample_id: S0_none, model_id: B0_dummy, hp_id: default}
+  - {prep_id: P0_minimal, sample_id: S0_none, model_id: B1_logistic_l2, hp_id: default}
+  - {prep_id: P2_drop40_median, sample_id: S0_none, model_id: B1_logistic_l2, hp_id: default}
+  - {prep_id: P2_drop40_median, sample_id: S1_weight, model_id: B1_logistic_l2, hp_id: default}
+  - {prep_id: P2_drop40_median, sample_id: S2_smote, model_id: B1_logistic_l2, hp_id: default}
+  - {prep_id: P4_drop40_winsor, sample_id: S1_weight, model_id: M2_xgboost, hp_id: default}
+  - {prep_id: P6_full_mi40, sample_id: S1_weight, model_id: M2_xgboost, hp_id: default}
+  - {prep_id: P6_full_mi40, sample_id: S1_weight, model_id: M3_lightgbm, hp_id: default}
+  - {prep_id: P4_drop40_winsor, sample_id: S1_weight, model_id: M1_random_forest, hp_id: default}
+  - {prep_id: P6_full_mi40, sample_id: S2_smote, model_id: M2_xgboost, hp_id: default}
