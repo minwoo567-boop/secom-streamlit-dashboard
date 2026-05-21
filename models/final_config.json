@@ -1,0 +1,27 @@
+{
+  "best_id": "P4_drop40_winsor__S1_weight__M2_xgboost__default",
+  "spec": {
+    "experiment_id": "P4_drop40_winsor__S1_weight__M2_xgboost__default",
+    "prep_id": "P4_drop40_winsor",
+    "sample_id": "S1_weight",
+    "model_id": "M2_xgboost",
+    "hp_id": "default",
+    "hp": {}
+  },
+  "threshold": 0.05,
+  "test_metrics": {
+    "threshold": 0.05,
+    "pr_auc": 0.18255627055615442,
+    "recall": 0.3125,
+    "precision": 0.23809523809523808,
+    "f1": 0.2702702702702703,
+    "balanced_acc": 0.6198863636363636,
+    "roc_auc": 0.7306818181818182,
+    "tn": 204,
+    "fp": 16,
+    "fn": 11,
+    "tp": 5,
+    "pr_auc_ci_low": 0.077988680415847,
+    "pr_auc_ci_high": 0.35333837742275004
+  }
+}
