@@ -1,0 +1,10 @@
+experiment_id,metric,baseline_id,mean_delta,wilcoxon_stat,p_raw,p_adj,significant
+P4_drop40_winsor__S1_weight__M2_xgboost__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.13522496756578717,15.0,0.03125,0.28125,False
+P4_drop40_winsor__S1_weight__M1_random_forest__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.11644299025299305,15.0,0.03125,0.25,False
+P6_full_mi40__S1_weight__M2_xgboost__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.11382639702833798,15.0,0.03125,0.21875,False
+P6_full_mi40__S1_weight__M3_lightgbm__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.09285508782954556,15.0,0.03125,0.1875,False
+P6_full_mi40__S2_smote__M2_xgboost__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.08755904198374447,15.0,0.03125,0.15625,False
+P2_drop40_median__S2_smote__B1_logistic_l2__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.0602074244643888,15.0,0.03125,0.125,False
+P2_drop40_median__S1_weight__B1_logistic_l2__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.0576322273989848,15.0,0.03125,0.09375,False
+P0_minimal__S0_none__B1_logistic_l2__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.04161435146337934,15.0,0.03125,0.0625,False
+P2_drop40_median__S0_none__B1_logistic_l2__default,pr_auc,P0_minimal__S0_none__B0_dummy__default,0.015430635431034248,12.0,0.15625,0.15625,False
