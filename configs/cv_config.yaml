@@ -1,0 +1,7 @@
+random_state: 42
+test_size: 0.15
+n_splits: 5
+shuffle: true
+primary_metric: pr_auc
+min_practical_gain: 0.02
+alpha: 0.05
