@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+.idea/
+.vscode/
+*.egg-info/
+.DS_Store
+
+# Experiment run artifacts (leaderboard CSV is kept)
+artifacts/experiments/*.json
+artifacts/oof/
+artifacts/eda/
+
+# Optional local-only outputs
+models/final_model.joblib
+models/test_evaluated.flag
+reports/
+scripts/github_push.py
