@@ -8,6 +8,7 @@ UCI/Kaggle SECOM 데이터(`paresh2047/uci-semcom`) 기반 Tabular 분류 프로
 |------|-----|
 | **Main file** | `streamlit_app.py` |
 | **Requirements** | `requirements.txt` |
+| **System packages** | `packages.txt` (LightGBM) |
 
 1. [share.streamlit.io](https://share.streamlit.io) → New app → GitHub repo 연결
 2. Main file: `streamlit_app.py`
